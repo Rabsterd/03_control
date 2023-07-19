@@ -7,7 +7,13 @@ public class Run2 {
 		LoopPractice prac = new LoopPractice();
 		
 		//prac.practice1();
-		prac.practice2();
-	}
+		//prac.practice2();
+		//prac.practice6();
+		//prac.practice7();
+		//prac.practice8();
+		//prac.practice9();
+		prac.practice10();
+	} 
+	
 
 }

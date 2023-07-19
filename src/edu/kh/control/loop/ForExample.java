@@ -217,5 +217,131 @@ public class ForExample {
 				System.out.println("잘못 입력하셨습니다.");
 			}
 		}
+	
+	public void ex16() {
+		// 구구단 모두 출력하기
+		
+		for(int dan = 2; dan <= 9; dan++) {
+			
+			for(int num = 1; num <=9; num++) {
+				System.out.printf("%2d X %2d = %2d  ", dan, num, dan * num);
+				
+			}
+			System.out.println(); // 하나의 단 출력이 끝났을 때 줄바꿈
+			// 아무내용 없는 println은 줄 바꿈 
+		}	
 	}
+	
+	public void ex17() {
+		
+		for(int dan = 9; dan >= 2; dan--) {
+			
+			for(int num = 1; num <=9; num++) {
+				System.out.printf("%d X %d = %2d  ", dan, num, dan * num);
+			}
+			System.out.println();
+		}
+	}
+	
+	public void ex18() {
+		// 2중 for문을 이용해서 다음 모양을 출력하시오
+		
+		// 12345
+		// 12345
+		// 12345
+		// 12345
+		// 12345
+		
+		for(int i = 1; i <= 5; i++) {// 5바퀴 반복하는 for문
+			for(int num = 1; num <= 5; num++) {// 12345 반복하는 for문
+				System.out.print(num);
+			}
+			System.out.println();
+		}	
+	}
+	
+	public void ex19() {
+		
+		for(int i = 1; i <=3; i++) {
+			for(int num = 5; num >=1; num--) {
+				System.out.print(num);
+			}
+			System.out.println();
+		}
+	}
+	
+	public void ex20() {
+		
+		for(int i = 1; i <= 4; i++) {
+			for(int num = 1; num <= i; num++) {
+				System.out.print(num);
+			}
+			System.out.println();
+		}
+	}
+	
+	public void ex21() {
+		
+		for(int i = 4; i >= 1; i--) {
+			for(int num = i; num >= 1; num--) {
+				System.out.print(num);	
+			}
+			System.out.println();
+		}
+	}
+	
+	public void ex22() {
+		//숫자 세기 count
+		
+		//1부터 20까지 1씩 증가하며서
+		//3의 배수의 총 개수 출력
+		//3의 배수의 합계 출력
+		
+		int count = 0; // 3의 배수의 개수를 세기 위한 변수
+		int sum = 0; // 3의 배수의 합계를 구하기 위한 변수
+		for(int i = 1; i<=20; i++) {
+			
+			if(i % 3 == 0) {
+				System.out.print(i + " ");
+				count++;
+				sum += i;
+			}
+			
+		}
+		System.out.println(": " + count + "개");
+		System.out.println("3의 배수 합계 : " + sum);
+		
+	}
+	
+	public void ex23() {
+		
+		// 2중 for문과 count를 이용해서 아래모양 출력하기
+		
+		// 1  2  3  4
+		// 5  6  7  8
+		// 9 10 11 12
+		
+		int count = 1;
+		
+		for(int i= 1; i <= 3; i++) { // 3줄
+			for(int k = 1; k <= 4; k++) { // 4칸
+				System.out.printf("%3d", count);
+				count++;
+			}
+			System.out.println();
+		}
+	}
+	
+	public void ex24() {
+		for(int dan = 1; dan <= 9; dan++) {
+			for(int num = 2; num <=9; num++) {
+				System.out.printf("%2d X %2d = %2d  ", num, dan, num * dan);
+				}
+			System.out.println();  
+		}
+			
+	}
+	
+	
+}
 
