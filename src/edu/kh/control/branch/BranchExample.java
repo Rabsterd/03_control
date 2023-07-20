@@ -142,7 +142,7 @@ public class BranchExample {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("[가위 바위 보 게임~!!");
+		System.out.println("[가위 바위 보] 게임~!!");
 		System.out.print("몇 판? : ");
 		int round = sc.nextInt();
 		
